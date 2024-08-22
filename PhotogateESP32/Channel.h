@@ -4,7 +4,6 @@
 #define REF_LEVEL 2048
 
 #include <Arduino.h>
-#include "AnalogOperator.h"
 
 class Channel
 {
@@ -21,8 +20,6 @@ public:
   inline void SetMarkUP() {_up = !_up;}
   inline void SetMarkDown() {_down = !_down;}
 
-public:
-  unsigned int Read();
 
 private:
   /*
@@ -37,8 +34,6 @@ private:
   int _refLevel;
   bool _up, _down; // Timestamp mark checkboxes
 
-private:
-  AnalogOperator* _AOperator;
 
 };
 

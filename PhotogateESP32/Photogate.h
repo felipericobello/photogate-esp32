@@ -9,7 +9,7 @@ class Photogate
 {
 public:
   //Initialize functions
-  Photogate(const int* gate);
+  Photogate(const unsigned int* gate);
   ~Photogate();
   void PinSetGate();
   void InitPhotogate();
@@ -24,8 +24,8 @@ public:
   
 
 private:
-  const int* _gate; 
-  const int  _gateSize;
+  const unsigned int* _gate; 
+  const unsigned int  _gateSize;
   bool _isRunning;
 
 private: //static allocations

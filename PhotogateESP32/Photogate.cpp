@@ -1,7 +1,7 @@
 #include "Photogate.h"
 
 
-Photogate::Photogate(const int* gate) : _gate(gate), _gateSize(s_gateSize), _isRunning(false)
+Photogate::Photogate(const unsigned int* gate) : _gate(gate), _gateSize(s_gateSize), _isRunning(true)
 {
   _TimeStamps = new TimeStamps();
 
@@ -44,18 +44,23 @@ void Photogate::OnUpdate()
   {
     for(int index = 0; index<s_gateSize; index++)
     {
-      t_Read[index] = _Channel[index]->Read();
+      t_Read[index] = analogRead(_gate[index]);
     }
 
     _TimeStamps->DeltaTime();
 
     for(int index = 0; index<s_gateSize; index++)
     {
-      Serial.write(t_Read[index]); // Writes analog reads on serial
+      //Serial.write(t_Read[index]); // Writes analog reads on serial
+      Serial.print("Read Analog Port "); Serial.print(index); Serial.print(": ");
+      Serial.println(t_Read[index]);
     }
 
     unsigned long t_dTime = _TimeStamps->GetDeltaTime();
-    Serial.write(t_dTime); // Writes deltaTime on serial
+    //Serial.write(t_dTime); // Writes deltaTime on serial
+    Serial.println(t_dTime);
+
+    delay(1000);
   }
 }
 

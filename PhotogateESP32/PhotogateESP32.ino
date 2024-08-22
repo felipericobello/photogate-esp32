@@ -12,7 +12,7 @@
 #include "Photogate.h"
 
 // Photogate pinout.
-const int gate[6] = {34, 35, 32, 33, 25, 26}; // ESP-WROOM-32 GPIO PINOUT. If gate size changed, must change s_gateSize due to static allocation.
+const unsigned int gate[6] = {34, 35, 32, 33, 25, 26}; // ESP-WROOM-32 GPIO PINOUT. If gate size changed, must change s_gateSize due to static allocation.
 Photogate Gate(gate);
 
 // Add this to Web class later.
