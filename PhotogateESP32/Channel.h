@@ -34,7 +34,6 @@ private:
   int _refLevel;
   bool _up, _down; // Timestamp mark checkboxes
 
-
 };
 
 #endif
