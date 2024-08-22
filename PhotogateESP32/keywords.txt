@@ -6,16 +6,17 @@
 #######################################
 
 Photogate	KEYWORD1
+Channel     KEYWORD1
+TimeStamp	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
-setKeyId	KEYWORD2
-setDetectTime	KEYWORD2
-setRepeatTime	KEYWORD2
-getKey	KEYWORD2
+
+METHODS	    KEYWORD2
+FUNCTIONS	KEYWORD2
 
 ######################################
 # Constants (LITERAL1)
 #######################################
-KEY_NONE	LITERAL1
+CONSTANT	LITERAL1
