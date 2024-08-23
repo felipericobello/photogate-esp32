@@ -1,0 +1,7 @@
+All pcb projects were made using Autodesk EAGLE software, so if you want to modify those:
+
+	1. Project manager: Place the project folder into your EAGLE projects folder, or add it directly through the EAGLE software.
+	2. Libraries: Add the libraries required into your library manager through EAGLE, either by importing them via the software or by placing them in the appropriate folder.
+
+
+**The EAGLE folder is typically found inside your "Documents" directory.
