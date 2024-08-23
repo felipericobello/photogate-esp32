@@ -3,10 +3,10 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -80,6 +80,9 @@
 <wire x1="67.29" y1="0" x2="67.29" y2="49.2" width="0" layer="20"/>
 <wire x1="67.29" y1="49.2" x2="0" y2="49.2" width="0" layer="20"/>
 <wire x1="0" y1="49.2" x2="0" y2="0" width="0" layer="20"/>
+<hole x="2.54" y="2.54" drill="3.49999375"/>
+<hole x="64.77" y="2.54" drill="3.49999375"/>
+<hole x="2.54" y="30.48" drill="3.49999375"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -1462,7 +1465,7 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -1494,8 +1497,8 @@ design rules under a new name.</description>
 <param name="mdCopperDimension" value="40mil"/>
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="6mil"/>
-<param name="msDrill" value="0.35mm"/>
+<param name="msWidth" value="20mil"/>
+<param name="msDrill" value="0.4mm"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -1556,7 +1559,7 @@ design rules under a new name.</description>
 <param name="Efforts" value="2"/>
 <param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
-<param name="PrefDir.1" value="-"/>
+<param name="PrefDir.1" value="*"/>
 <param name="PrefDir.2" value="0"/>
 <param name="PrefDir.3" value="0"/>
 <param name="PrefDir.4" value="0"/>
@@ -1571,7 +1574,7 @@ design rules under a new name.</description>
 <param name="PrefDir.13" value="0"/>
 <param name="PrefDir.14" value="0"/>
 <param name="PrefDir.15" value="0"/>
-<param name="PrefDir.16" value="|"/>
+<param name="PrefDir.16" value="-"/>
 <param name="cfVia" value="8"/>
 <param name="cfNonPref" value="5"/>
 <param name="cfChangeDir" value="2"/>
@@ -1663,96 +1666,96 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="9" x="-36.83" y="-19.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="15.1892" y="29.21" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="J1" library="Connector" library_urn="urn:adsk.eagle:library:16378166" package="B3B-XH-A" package3d_urn="urn:adsk.eagle:package:24957646/3" value="JST-XH-3PIN" x="64.77" y="46.99" smashed="yes" rot="R180">
-<attribute name="CATEGORY" value="Header " x="44.45" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESCRIPTION" value="Connector Header Through Hole 3 position 0.098&quot; (2.50mm)" x="44.45" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" value="JST Sales America Inc. " x="44.45" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="B3B-XH-A(LF)(SN)" x="44.45" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="63.5" y="41.91" size="1" layer="25" rot="R180" align="center"/>
-<attribute name="PART_STATUS" value="ACTIVE" x="44.45" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PITCH" value="0.098&quot; (2.50mm) " x="44.45" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="ROHS_COMPLIANCE" value="ROHS3 Compliant " x="44.45" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SERIES" value="XH" x="44.45" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SUB_CATEGORY" value="Rectangular Connectors " x="44.45" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TYPE" value="Header, Male Pin, Board to Cable/Wire, Through Hole" x="44.45" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="62.23" y="50.8" size="1" layer="27" rot="R180" align="center"/>
+<element name="S1" library="Connector" library_urn="urn:adsk.eagle:library:16378166" package="B3B-XH-A" package3d_urn="urn:adsk.eagle:package:24957646/3" value="JST-XH-3PIN" x="64.77" y="46.863" smashed="yes" rot="R180">
+<attribute name="CATEGORY" value="Header " x="44.45" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="Connector Header Through Hole 3 position 0.098&quot; (2.50mm)" x="44.45" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="JST Sales America Inc. " x="44.45" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="B3B-XH-A(LF)(SN)" x="44.45" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="62.23" y="41.783" size="1" layer="25" rot="R180" align="center"/>
+<attribute name="PART_STATUS" value="ACTIVE" x="44.45" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PITCH" value="0.098&quot; (2.50mm) " x="44.45" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ROHS_COMPLIANCE" value="ROHS3 Compliant " x="44.45" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SERIES" value="XH" x="44.45" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUB_CATEGORY" value="Rectangular Connectors " x="44.45" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TYPE" value="Header, Male Pin, Board to Cable/Wire, Through Hole" x="44.45" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="62.23" y="50.673" size="1" layer="27" rot="R180" align="center"/>
 </element>
-<element name="J2" library="Connector" library_urn="urn:adsk.eagle:library:16378166" package="B3B-XH-A" package3d_urn="urn:adsk.eagle:package:24957646/3" value="JST-XH-3PIN" x="53.34" y="46.99" smashed="yes" rot="R180">
-<attribute name="CATEGORY" value="Header " x="21.59" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESCRIPTION" value="Connector Header Through Hole 3 position 0.098&quot; (2.50mm)" x="21.59" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" value="JST Sales America Inc. " x="21.59" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="B3B-XH-A(LF)(SN)" x="21.59" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="52.07" y="41.91" size="1" layer="25" rot="R180" align="center"/>
-<attribute name="PART_STATUS" value="ACTIVE" x="21.59" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PITCH" value="0.098&quot; (2.50mm) " x="21.59" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="ROHS_COMPLIANCE" value="ROHS3 Compliant " x="21.59" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SERIES" value="XH" x="21.59" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SUB_CATEGORY" value="Rectangular Connectors " x="21.59" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TYPE" value="Header, Male Pin, Board to Cable/Wire, Through Hole" x="21.59" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="50.8" y="50.8" size="1" layer="27" rot="R180" align="center"/>
+<element name="S2" library="Connector" library_urn="urn:adsk.eagle:library:16378166" package="B3B-XH-A" package3d_urn="urn:adsk.eagle:package:24957646/3" value="JST-XH-3PIN" x="53.34" y="46.863" smashed="yes" rot="R180">
+<attribute name="CATEGORY" value="Header " x="21.59" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="Connector Header Through Hole 3 position 0.098&quot; (2.50mm)" x="21.59" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="JST Sales America Inc. " x="21.59" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="B3B-XH-A(LF)(SN)" x="21.59" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="50.8" y="41.783" size="1" layer="25" rot="R180" align="center"/>
+<attribute name="PART_STATUS" value="ACTIVE" x="21.59" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PITCH" value="0.098&quot; (2.50mm) " x="21.59" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ROHS_COMPLIANCE" value="ROHS3 Compliant " x="21.59" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SERIES" value="XH" x="21.59" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUB_CATEGORY" value="Rectangular Connectors " x="21.59" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TYPE" value="Header, Male Pin, Board to Cable/Wire, Through Hole" x="21.59" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="50.8" y="50.673" size="1" layer="27" rot="R180" align="center"/>
 </element>
-<element name="J3" library="Connector" library_urn="urn:adsk.eagle:library:16378166" package="B3B-XH-A" package3d_urn="urn:adsk.eagle:package:24957646/3" value="JST-XH-3PIN" x="41.91" y="46.99" smashed="yes" rot="R180">
-<attribute name="CATEGORY" value="Header " x="-1.27" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESCRIPTION" value="Connector Header Through Hole 3 position 0.098&quot; (2.50mm)" x="-1.27" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" value="JST Sales America Inc. " x="-1.27" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="B3B-XH-A(LF)(SN)" x="-1.27" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="40.64" y="41.91" size="1" layer="25" rot="R180" align="center"/>
-<attribute name="PART_STATUS" value="ACTIVE" x="-1.27" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PITCH" value="0.098&quot; (2.50mm) " x="-1.27" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="ROHS_COMPLIANCE" value="ROHS3 Compliant " x="-1.27" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SERIES" value="XH" x="-1.27" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SUB_CATEGORY" value="Rectangular Connectors " x="-1.27" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TYPE" value="Header, Male Pin, Board to Cable/Wire, Through Hole" x="-1.27" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="39.37" y="50.8" size="1" layer="27" rot="R180" align="center"/>
+<element name="S3" library="Connector" library_urn="urn:adsk.eagle:library:16378166" package="B3B-XH-A" package3d_urn="urn:adsk.eagle:package:24957646/3" value="JST-XH-3PIN" x="41.91" y="46.863" smashed="yes" rot="R180">
+<attribute name="CATEGORY" value="Header " x="-1.27" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="Connector Header Through Hole 3 position 0.098&quot; (2.50mm)" x="-1.27" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="JST Sales America Inc. " x="-1.27" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="B3B-XH-A(LF)(SN)" x="-1.27" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="39.37" y="41.783" size="1" layer="25" rot="R180" align="center"/>
+<attribute name="PART_STATUS" value="ACTIVE" x="-1.27" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PITCH" value="0.098&quot; (2.50mm) " x="-1.27" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ROHS_COMPLIANCE" value="ROHS3 Compliant " x="-1.27" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SERIES" value="XH" x="-1.27" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUB_CATEGORY" value="Rectangular Connectors " x="-1.27" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TYPE" value="Header, Male Pin, Board to Cable/Wire, Through Hole" x="-1.27" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="39.37" y="50.673" size="1" layer="27" rot="R180" align="center"/>
 </element>
-<element name="J4" library="Connector" library_urn="urn:adsk.eagle:library:16378166" package="B3B-XH-A" package3d_urn="urn:adsk.eagle:package:24957646/3" value="JST-XH-3PIN" x="30.48" y="46.99" smashed="yes" rot="R180">
-<attribute name="CATEGORY" value="Header " x="-24.13" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESCRIPTION" value="Connector Header Through Hole 3 position 0.098&quot; (2.50mm)" x="-24.13" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" value="JST Sales America Inc. " x="-24.13" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="B3B-XH-A(LF)(SN)" x="-24.13" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="29.21" y="41.91" size="1" layer="25" rot="R180" align="center"/>
-<attribute name="PART_STATUS" value="ACTIVE" x="-24.13" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PITCH" value="0.098&quot; (2.50mm) " x="-24.13" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="ROHS_COMPLIANCE" value="ROHS3 Compliant " x="-24.13" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SERIES" value="XH" x="-24.13" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SUB_CATEGORY" value="Rectangular Connectors " x="-24.13" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TYPE" value="Header, Male Pin, Board to Cable/Wire, Through Hole" x="-24.13" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="27.94" y="50.8" size="1" layer="27" rot="R180" align="center"/>
+<element name="S4" library="Connector" library_urn="urn:adsk.eagle:library:16378166" package="B3B-XH-A" package3d_urn="urn:adsk.eagle:package:24957646/3" value="JST-XH-3PIN" x="30.48" y="46.863" smashed="yes" rot="R180">
+<attribute name="CATEGORY" value="Header " x="-24.13" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="Connector Header Through Hole 3 position 0.098&quot; (2.50mm)" x="-24.13" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="JST Sales America Inc. " x="-24.13" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="B3B-XH-A(LF)(SN)" x="-24.13" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="27.94" y="41.783" size="1" layer="25" rot="R180" align="center"/>
+<attribute name="PART_STATUS" value="ACTIVE" x="-24.13" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PITCH" value="0.098&quot; (2.50mm) " x="-24.13" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ROHS_COMPLIANCE" value="ROHS3 Compliant " x="-24.13" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SERIES" value="XH" x="-24.13" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUB_CATEGORY" value="Rectangular Connectors " x="-24.13" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TYPE" value="Header, Male Pin, Board to Cable/Wire, Through Hole" x="-24.13" y="88.773" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="27.94" y="50.673" size="1" layer="27" rot="R180" align="center"/>
 </element>
-<element name="J5" library="Connector" library_urn="urn:adsk.eagle:library:16378166" package="B3B-XH-A" package3d_urn="urn:adsk.eagle:package:24957646/3" value="JST-XH-3PIN" x="19.05" y="46.99" smashed="yes" rot="R180">
-<attribute name="CATEGORY" value="Header " x="-1.27" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESCRIPTION" value="Connector Header Through Hole 3 position 0.098&quot; (2.50mm)" x="-1.27" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" value="JST Sales America Inc. " x="-1.27" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="B3B-XH-A(LF)(SN)" x="-1.27" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="17.78" y="41.91" size="1" layer="25" rot="R180" align="center"/>
-<attribute name="PART_STATUS" value="ACTIVE" x="-1.27" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PITCH" value="0.098&quot; (2.50mm) " x="-1.27" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="ROHS_COMPLIANCE" value="ROHS3 Compliant " x="-1.27" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SERIES" value="XH" x="-1.27" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SUB_CATEGORY" value="Rectangular Connectors " x="-1.27" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TYPE" value="Header, Male Pin, Board to Cable/Wire, Through Hole" x="-1.27" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="16.51" y="50.8" size="1" layer="27" rot="R180" align="center"/>
+<element name="S5" library="Connector" library_urn="urn:adsk.eagle:library:16378166" package="B3B-XH-A" package3d_urn="urn:adsk.eagle:package:24957646/3" value="JST-XH-3PIN" x="19.05" y="46.863" smashed="yes" rot="R180">
+<attribute name="CATEGORY" value="Header " x="-1.27" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="Connector Header Through Hole 3 position 0.098&quot; (2.50mm)" x="-1.27" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="JST Sales America Inc. " x="-1.27" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="B3B-XH-A(LF)(SN)" x="-1.27" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="16.51" y="41.783" size="1" layer="25" rot="R180" align="center"/>
+<attribute name="PART_STATUS" value="ACTIVE" x="-1.27" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PITCH" value="0.098&quot; (2.50mm) " x="-1.27" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ROHS_COMPLIANCE" value="ROHS3 Compliant " x="-1.27" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SERIES" value="XH" x="-1.27" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUB_CATEGORY" value="Rectangular Connectors " x="-1.27" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TYPE" value="Header, Male Pin, Board to Cable/Wire, Through Hole" x="-1.27" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="16.51" y="50.673" size="1" layer="27" rot="R180" align="center"/>
 </element>
-<element name="J6" library="Connector" library_urn="urn:adsk.eagle:library:16378166" package="B3B-XH-A" package3d_urn="urn:adsk.eagle:package:24957646/3" value="JST-XH-3PIN" x="7.62" y="46.99" smashed="yes" rot="R180">
-<attribute name="CATEGORY" value="Header " x="-24.13" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESCRIPTION" value="Connector Header Through Hole 3 position 0.098&quot; (2.50mm)" x="-24.13" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" value="JST Sales America Inc. " x="-24.13" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="B3B-XH-A(LF)(SN)" x="-24.13" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="6.35" y="41.91" size="1" layer="25" rot="R180" align="center"/>
-<attribute name="PART_STATUS" value="ACTIVE" x="-24.13" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PITCH" value="0.098&quot; (2.50mm) " x="-24.13" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="ROHS_COMPLIANCE" value="ROHS3 Compliant " x="-24.13" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SERIES" value="XH" x="-24.13" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SUB_CATEGORY" value="Rectangular Connectors " x="-24.13" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TYPE" value="Header, Male Pin, Board to Cable/Wire, Through Hole" x="-24.13" y="100.33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="5.08" y="50.8" size="1" layer="27" rot="R180" align="center"/>
+<element name="S6" library="Connector" library_urn="urn:adsk.eagle:library:16378166" package="B3B-XH-A" package3d_urn="urn:adsk.eagle:package:24957646/3" value="JST-XH-3PIN" x="7.62" y="46.863" smashed="yes" rot="R180">
+<attribute name="CATEGORY" value="Header " x="-24.13" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="Connector Header Through Hole 3 position 0.098&quot; (2.50mm)" x="-24.13" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="JST Sales America Inc. " x="-24.13" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="B3B-XH-A(LF)(SN)" x="-24.13" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="5.08" y="41.783" size="1" layer="25" rot="R180" align="center"/>
+<attribute name="PART_STATUS" value="ACTIVE" x="-24.13" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PITCH" value="0.098&quot; (2.50mm) " x="-24.13" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ROHS_COMPLIANCE" value="ROHS3 Compliant " x="-24.13" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SERIES" value="XH" x="-24.13" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUB_CATEGORY" value="Rectangular Connectors " x="-24.13" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TYPE" value="Header, Male Pin, Board to Cable/Wire, Through Hole" x="-24.13" y="100.203" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="5.08" y="50.673" size="1" layer="27" rot="R180" align="center"/>
 </element>
-<element name="J7" library="Connector" library_urn="urn:adsk.eagle:library:16378166" package="TERMBLK_254-2N" package3d_urn="urn:adsk.eagle:package:24957623/2" value="TERM-BLK-2P" x="3.81" y="19.05" smashed="yes" rot="R90">
+<element name="-|+" library="Connector" library_urn="urn:adsk.eagle:library:16378166" package="TERMBLK_254-2N" package3d_urn="urn:adsk.eagle:package:24957623/2" value="TERM-BLK-2P" x="3.81" y="19.05" smashed="yes" rot="R90">
 <attribute name="CATEGORY" value="Fixed Terminal Blocks" x="10.16" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DESCRIPTION" value="Fixed Terminal Blocks 2P SIDE ENTRY 2.54mm" x="10.16" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="TE Connectivity AMP Connectors" x="10.16" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="282834-2 " x="10.16" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="9.21" y="19.05" size="1.778" layer="25" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="9.21" y="20.32" size="1.778" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="OPERATING_TEMPERATURE" value="-40°C ~ 105°C " x="10.16" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_STATUS" value="Active " x="10.16" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PITCH" value="0.100&quot; (2.54mm) " x="10.16" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1768,92 +1771,92 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="53.34" y="20.32" size="1.27" layer="27"/>
 </element>
 <element name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220" x="36.83" y="39.37" smashed="yes" rot="R270">
-<attribute name="NAME" x="38.1" y="40.005" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="35.56" y="37.465" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="86" x="-26.67" y="22.86" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="-26.67" y="22.86" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="34.29" y="40.005" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220 " x="25.4" y="39.37" smashed="yes" rot="R270">
-<attribute name="NAME" x="26.67" y="40.005" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="24.13" y="37.465" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="86" x="-26.67" y="-19.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="-26.67" y="-19.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="22.86" y="40.005" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220" x="13.97" y="39.37" smashed="yes" rot="R270">
-<attribute name="NAME" x="15.24" y="40.005" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="12.7" y="37.465" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="86" x="-49.53" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="-49.53" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="11.43" y="40.005" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220" x="2.54" y="39.37" smashed="yes" rot="R270">
-<attribute name="NAME" x="3.81" y="40.005" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="1.27" y="37.465" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="86" x="-60.96" y="10.16" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="-60.96" y="10.16" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="0" y="40.005" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220" x="49.53" y="22.86" smashed="yes">
-<attribute name="NAME" x="48.895" y="24.13" size="1.27" layer="25"/>
+<attribute name="NAME" x="47.625" y="24.13" size="1.27" layer="25"/>
 <attribute name="POPULARITY" value="86" x="85.09" y="-40.64" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="85.09" y="-40.64" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="48.895" y="20.32" size="1.27" layer="27"/>
 </element>
 <element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k" x="64.77" y="39.37" smashed="yes" rot="R270">
-<attribute name="NAME" x="66.04" y="40.005" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="63.5" y="37.465" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="86" x="1.27" y="-11.43" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="1.27" y="-11.43" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="62.23" y="40.005" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k" x="53.34" y="39.37" smashed="yes" rot="R270">
-<attribute name="NAME" x="54.61" y="40.005" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="52.07" y="37.465" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="86" x="-10.16" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="-10.16" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="50.8" y="40.005" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k" x="41.91" y="39.37" smashed="yes" rot="R270">
-<attribute name="NAME" x="43.18" y="40.005" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="40.64" y="37.465" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="86" x="-21.59" y="-21.59" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="-21.59" y="-21.59" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="39.37" y="40.005" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k" x="30.48" y="39.37" smashed="yes" rot="R270">
-<attribute name="NAME" x="31.75" y="40.005" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="29.21" y="37.465" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="86" x="-39.37" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="-39.37" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="27.94" y="40.005" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k" x="19.05" y="39.37" smashed="yes" rot="R270">
-<attribute name="NAME" x="20.32" y="40.005" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="17.78" y="37.465" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="86" x="-50.8" y="19.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="-50.8" y="19.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="16.51" y="40.005" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k" x="7.62" y="39.37" smashed="yes" rot="R270">
-<attribute name="NAME" x="8.89" y="40.005" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="6.35" y="37.465" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="86" x="-62.23" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="-62.23" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="5.08" y="40.005" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220" x="59.69" y="39.37" smashed="yes" rot="R270">
-<attribute name="NAME" x="60.96" y="40.005" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="58.42" y="37.465" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="86" x="-3.81" y="-1.27" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="-3.81" y="-1.27" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="57.15" y="40.005" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220" x="48.26" y="39.37" smashed="yes" rot="R270">
-<attribute name="NAME" x="49.53" y="40.005" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="46.99" y="37.465" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="86" x="-15.24" y="-6.35" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="-15.24" y="-6.35" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="45.72" y="40.005" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="S1" library="Switch" library_urn="urn:adsk.eagle:library:11396471" package="KSC441GDCT70SHLFS" package3d_urn="urn:adsk.eagle:package:19992271/3" value="KSC441GDCT70SHLFS" x="52.07" y="7.62" smashed="yes" rot="R270">
+<element name="RESETESP" library="Switch" library_urn="urn:adsk.eagle:library:11396471" package="KSC441GDCT70SHLFS" package3d_urn="urn:adsk.eagle:package:19992271/3" value="KSC441GDCT70SHLFS" x="52.07" y="7.62" smashed="yes" rot="R270">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="21.59" y="-22.86" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIGIKEY_PARTNO" value="CKN12187TR-ND" x="21.59" y="-22.86" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="C&amp;K" x="21.59" y="-22.86" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="KSC441G DCT 70SH LFS" x="21.59" y="-22.86" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="56.36" y="11.12" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="56.36" y="12.39" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="46.82" y="11.12" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="S2" library="Switch" library_urn="urn:adsk.eagle:library:11396471" package="KSC441GDCT70SHLFS" package3d_urn="urn:adsk.eagle:package:19992271/3" value="KSC441GDCT70SHLFS" x="16.51" y="7.62" smashed="yes" rot="R270">
+<element name="BOTESP" library="Switch" library_urn="urn:adsk.eagle:library:11396471" package="KSC441GDCT70SHLFS" package3d_urn="urn:adsk.eagle:package:19992271/3" value="KSC441GDCT70SHLFS" x="16.51" y="7.62" smashed="yes" rot="R270">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="-13.97" y="-46.99" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIGIKEY_PARTNO" value="CKN12187TR-ND" x="-13.97" y="-46.99" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="C&amp;K" x="-13.97" y="-46.99" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1875,19 +1878,32 @@ design rules under a new name.</description>
 <signals>
 <signal name="GND">
 <contactref element="U1" pad="1"/>
-<contactref element="S1" pad="3"/>
-<contactref element="S2" pad="3"/>
+<contactref element="RESETESP" pad="3"/>
+<contactref element="BOTESP" pad="3"/>
 <contactref element="LED1" pad="C"/>
-<contactref element="J7" pad="1"/>
+<contactref element="-|+" pad="1"/>
 <contactref element="IC1" pad="1"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C2" pad="-"/>
-<contactref element="J1" pad="2"/>
-<contactref element="J2" pad="2"/>
-<contactref element="J3" pad="2"/>
-<contactref element="J4" pad="2"/>
-<contactref element="J5" pad="2"/>
-<contactref element="J6" pad="2"/>
+<contactref element="S1" pad="2"/>
+<contactref element="S2" pad="2"/>
+<contactref element="S3" pad="2"/>
+<contactref element="S4" pad="2"/>
+<contactref element="S5" pad="2"/>
+<contactref element="S6" pad="2"/>
+<wire x1="50.84" y1="46.863" x2="62.27" y2="46.863" width="0" layer="19" extent="1-1"/>
+<wire x1="39.41" y1="46.863" x2="50.84" y2="46.863" width="0" layer="19" extent="1-1"/>
+<wire x1="27.98" y1="46.863" x2="39.41" y2="46.863" width="0" layer="19" extent="1-1"/>
+<wire x1="16.55" y1="46.863" x2="27.98" y2="46.863" width="0" layer="19" extent="1-1"/>
+<wire x1="5.12" y1="46.863" x2="16.55" y2="46.863" width="0" layer="19" extent="1-1"/>
+<wire x1="16.28" y1="33.02" x2="16.55" y2="46.863" width="0" layer="19" extent="1-1"/>
+<wire x1="13.36" y1="28.97" x2="16.28" y2="33.02" width="0" layer="19" extent="1-1"/>
+<wire x1="14.92" y1="20.32" x2="13.36" y2="28.97" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="19.05" x2="14.92" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="14.51" y1="3.17" x2="14.92" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="55.66" y1="22.86" x2="50.84" y2="46.863" width="0" layer="19" extent="1-1"/>
+<wire x1="43.29" y1="10.08" x2="55.66" y2="22.86" width="0" layer="19" extent="1-1"/>
+<wire x1="50.07" y1="3.17" x2="43.29" y2="10.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="U1" pad="2"/>
@@ -1906,85 +1922,125 @@ design rules under a new name.</description>
 <contactref element="R12" pad="2"/>
 <contactref element="R13" pad="2"/>
 <contactref element="R1" pad="1"/>
+<wire x1="59.69" y1="38.42" x2="64.77" y2="38.42" width="0" layer="19" extent="1-1"/>
+<wire x1="53.34" y1="38.42" x2="59.69" y2="38.42" width="0" layer="19" extent="1-1"/>
+<wire x1="48.26" y1="38.42" x2="53.34" y2="38.42" width="0" layer="19" extent="1-1"/>
+<wire x1="41.91" y1="38.42" x2="48.26" y2="38.42" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="38.42" x2="41.91" y2="38.42" width="0" layer="19" extent="1-1"/>
+<wire x1="30.48" y1="38.42" x2="36.83" y2="38.42" width="0" layer="19" extent="1-1"/>
+<wire x1="25.4" y1="38.42" x2="30.48" y2="38.42" width="0" layer="19" extent="1-1"/>
+<wire x1="19.05" y1="38.42" x2="25.4" y2="38.42" width="0" layer="19" extent="1-1"/>
+<wire x1="13.97" y1="38.42" x2="19.05" y2="38.42" width="0" layer="19" extent="1-1"/>
+<wire x1="19.28" y1="33.02" x2="19.05" y2="38.42" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="38.42" x2="13.97" y2="38.42" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="38.42" x2="7.62" y2="38.42" width="0" layer="19" extent="1-1"/>
+<wire x1="19.66" y1="26.67" x2="19.28" y2="33.02" width="0" layer="19" extent="1-1"/>
+<wire x1="54.61" y1="17.46" x2="53.34" y2="38.42" width="0" layer="19" extent="1-1"/>
+<wire x1="43.29" y1="11.35" x2="54.61" y2="17.46" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RESET">
 <contactref element="U1" pad="3"/>
-<contactref element="S1" pad="1"/>
+<contactref element="RESETESP" pad="1"/>
+<wire x1="43.29" y1="12.62" x2="54.07" y2="3.17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED">
 <contactref element="U1" pad="16"/>
 <contactref element="R14" pad="1"/>
+<wire x1="38.735" y1="28.08" x2="48.58" y2="22.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BOOT">
 <contactref element="U1" pad="25"/>
-<contactref element="S2" pad="2"/>
+<contactref element="BOTESP" pad="2"/>
+<wire x1="18.51" y1="12.07" x2="25.29" y2="26.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
-<contactref element="S1" pad="2"/>
+<contactref element="RESETESP" pad="2"/>
 <contactref element="R1" pad="2"/>
+<wire x1="54.07" y1="12.07" x2="54.61" y2="15.56" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+9V">
-<contactref element="J7" pad="2"/>
+<contactref element="-|+" pad="2"/>
 <contactref element="IC1" pad="3"/>
 <contactref element="C1" pad="1"/>
+<wire x1="13.02" y1="20.32" x2="13.36" y2="24.37" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="21.59" x2="13.02" y2="20.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SENSOR1">
-<contactref element="J1" pad="1"/>
+<contactref element="S1" pad="1"/>
 <contactref element="R2" pad="1"/>
 <contactref element="U1" pad="6"/>
+<wire x1="64.77" y1="40.32" x2="64.77" y2="46.863" width="0" layer="19" extent="1-1"/>
+<wire x1="43.29" y1="16.43" x2="64.77" y2="40.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SENSOR2">
-<contactref element="J2" pad="1"/>
+<contactref element="S2" pad="1"/>
 <contactref element="R3" pad="1"/>
 <contactref element="U1" pad="7"/>
+<wire x1="53.34" y1="40.32" x2="53.34" y2="46.863" width="0" layer="19" extent="1-1"/>
+<wire x1="43.29" y1="17.7" x2="53.34" y2="40.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SENSOR3">
-<contactref element="J3" pad="1"/>
+<contactref element="S3" pad="1"/>
 <contactref element="R4" pad="1"/>
 <contactref element="U1" pad="8"/>
+<wire x1="41.91" y1="40.32" x2="41.91" y2="46.863" width="0" layer="19" extent="1-1"/>
+<wire x1="43.29" y1="18.97" x2="41.91" y2="40.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SENSOR4">
-<contactref element="J4" pad="1"/>
+<contactref element="S4" pad="1"/>
 <contactref element="R5" pad="1"/>
 <contactref element="U1" pad="9"/>
+<wire x1="30.48" y1="40.32" x2="30.48" y2="46.863" width="0" layer="19" extent="1-1"/>
+<wire x1="43.29" y1="20.24" x2="30.48" y2="40.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SENSOR5">
-<contactref element="J5" pad="1"/>
+<contactref element="S5" pad="1"/>
 <contactref element="R6" pad="1"/>
 <contactref element="U1" pad="12"/>
+<wire x1="19.05" y1="40.32" x2="43.29" y2="24.05" width="0" layer="19" extent="1-1"/>
+<wire x1="19.05" y1="46.863" x2="19.05" y2="40.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SENSOR6">
-<contactref element="J6" pad="1"/>
+<contactref element="S6" pad="1"/>
 <contactref element="R7" pad="1"/>
 <contactref element="U1" pad="13"/>
+<wire x1="7.62" y1="40.32" x2="43.29" y2="25.32" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="46.863" x2="7.62" y2="40.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
-<contactref element="J1" pad="3"/>
+<contactref element="S1" pad="3"/>
 <contactref element="R8" pad="1"/>
+<wire x1="59.69" y1="40.32" x2="59.77" y2="46.863" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
-<contactref element="J2" pad="3"/>
+<contactref element="S2" pad="3"/>
 <contactref element="R9" pad="1"/>
+<wire x1="48.26" y1="40.32" x2="48.34" y2="46.863" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
-<contactref element="J3" pad="3"/>
+<contactref element="S3" pad="3"/>
 <contactref element="R10" pad="1"/>
+<wire x1="36.83" y1="40.32" x2="36.91" y2="46.863" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
-<contactref element="J4" pad="3"/>
+<contactref element="S4" pad="3"/>
 <contactref element="R11" pad="1"/>
+<wire x1="25.4" y1="40.32" x2="25.48" y2="46.863" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
-<contactref element="J5" pad="3"/>
+<contactref element="S5" pad="3"/>
 <contactref element="R12" pad="1"/>
+<wire x1="13.97" y1="40.32" x2="14.05" y2="46.863" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
-<contactref element="J6" pad="3"/>
+<contactref element="S6" pad="3"/>
 <contactref element="R13" pad="1"/>
+<wire x1="2.54" y1="40.32" x2="2.62" y2="46.863" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
 <contactref element="R14" pad="2"/>
 <contactref element="LED1" pad="A"/>
+<wire x1="50.48" y1="22.86" x2="53.56" y2="22.86" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

@@ -19502,10 +19502,10 @@ Source: www.kingbright.com</description>
 </class>
 </classes>
 <groups>
-<schematic_group name="RESET"/>
 <schematic_group name="POWER"/>
 <schematic_group name="BOOT"/>
 <schematic_group name="SENSOR"/>
+<schematic_group name="RESET"/>
 </groups>
 <parts>
 <part name="U1" library="esp32" deviceset="ESP-WROOM-32" device=""/>
@@ -19582,49 +19582,49 @@ Source: www.kingbright.com</description>
 <instance part="GND1" gate="1" x="12.7" y="76.2" smashed="yes" rot="R180">
 <attribute name="VALUE" x="15.24" y="78.74" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="RESETESP" gate="G$1" x="111.76" y="91.44" smashed="yes" grouprefs="RESET">
-<attribute name="NAME" x="108.712" y="96.266" size="1.778" layer="95"/>
-<attribute name="VALUE" x="105.41" y="85.852" size="1.778" layer="96"/>
+<instance part="RESETESP" gate="G$1" x="111.76" y="93.98" smashed="yes" grouprefs="RESET">
+<attribute name="NAME" x="108.712" y="98.806" size="1.778" layer="95"/>
+<attribute name="VALUE" x="105.41" y="88.392" size="1.778" layer="96"/>
 </instance>
-<instance part="GND2" gate="1" x="129.54" y="91.44" smashed="yes" rot="R90" grouprefs="RESET">
-<attribute name="VALUE" x="132.08" y="88.9" size="1.778" layer="96" rot="R90"/>
+<instance part="GND2" gate="1" x="129.54" y="93.98" smashed="yes" rot="R90" grouprefs="RESET">
+<attribute name="VALUE" x="132.08" y="91.44" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V2" gate="G$1" x="83.82" y="91.44" smashed="yes" rot="R90" grouprefs="RESET">
-<attribute name="VALUE" x="88.9" y="88.9" size="1.778" layer="96" rot="R180"/>
+<instance part="+3V2" gate="G$1" x="83.82" y="93.98" smashed="yes" rot="R90" grouprefs="RESET">
+<attribute name="VALUE" x="88.9" y="91.44" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="BOTESP" gate="G$1" x="154.94" y="101.6" smashed="yes" grouprefs="BOOT">
-<attribute name="NAME" x="151.892" y="106.426" size="1.778" layer="95"/>
-<attribute name="VALUE" x="148.59" y="96.012" size="1.778" layer="96"/>
+<instance part="BOTESP" gate="G$1" x="154.94" y="104.14" smashed="yes" grouprefs="BOOT">
+<attribute name="NAME" x="151.892" y="108.966" size="1.778" layer="95"/>
+<attribute name="VALUE" x="148.59" y="98.552" size="1.778" layer="96"/>
 </instance>
-<instance part="GND3" gate="1" x="167.64" y="101.6" smashed="yes" rot="R90" grouprefs="BOOT">
-<attribute name="VALUE" x="170.18" y="99.06" size="1.778" layer="96" rot="R90"/>
+<instance part="GND3" gate="1" x="167.64" y="104.14" smashed="yes" rot="R90" grouprefs="BOOT">
+<attribute name="VALUE" x="170.18" y="101.6" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND4" gate="1" x="172.72" y="88.9" smashed="yes" rot="R90" grouprefs="BOOT">
-<attribute name="VALUE" x="175.26" y="86.36" size="1.778" layer="96" rot="R90"/>
+<instance part="GND4" gate="1" x="172.72" y="91.44" smashed="yes" rot="R90" grouprefs="BOOT">
+<attribute name="VALUE" x="175.26" y="88.9" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="S1" gate="G$1" x="91.44" y="12.7" smashed="yes" rot="R270" grouprefs="SENSOR">
-<attribute name="VALUE" x="87.376" y="7.62" size="1.778" layer="96" rot="R270" align="top-center"/>
-<attribute name="NAME" x="95.504" y="12.7" size="1.778" layer="95" rot="R270" align="bottom-center"/>
+<instance part="S1" gate="G$1" x="91.44" y="10.16" smashed="yes" rot="R270" grouprefs="SENSOR">
+<attribute name="VALUE" x="87.376" y="5.08" size="1.778" layer="96" rot="R270" align="top-center"/>
+<attribute name="NAME" x="95.504" y="10.16" size="1.778" layer="95" rot="R270" align="bottom-center"/>
 </instance>
-<instance part="S2" gate="G$1" x="111.76" y="12.7" smashed="yes" rot="R270" grouprefs="SENSOR">
-<attribute name="VALUE" x="107.696" y="7.62" size="1.778" layer="96" rot="R270" align="top-center"/>
-<attribute name="NAME" x="115.824" y="12.7" size="1.778" layer="95" rot="R270" align="bottom-center"/>
+<instance part="S2" gate="G$1" x="111.76" y="10.16" smashed="yes" rot="R270" grouprefs="SENSOR">
+<attribute name="VALUE" x="107.696" y="5.08" size="1.778" layer="96" rot="R270" align="top-center"/>
+<attribute name="NAME" x="115.824" y="10.16" size="1.778" layer="95" rot="R270" align="bottom-center"/>
 </instance>
-<instance part="S3" gate="G$1" x="132.08" y="12.7" smashed="yes" rot="R270" grouprefs="SENSOR">
-<attribute name="VALUE" x="128.016" y="7.62" size="1.778" layer="96" rot="R270" align="top-center"/>
-<attribute name="NAME" x="136.144" y="12.7" size="1.778" layer="95" rot="R270" align="bottom-center"/>
+<instance part="S3" gate="G$1" x="132.08" y="10.16" smashed="yes" rot="R270" grouprefs="SENSOR">
+<attribute name="VALUE" x="128.016" y="5.08" size="1.778" layer="96" rot="R270" align="top-center"/>
+<attribute name="NAME" x="136.144" y="10.16" size="1.778" layer="95" rot="R270" align="bottom-center"/>
 </instance>
-<instance part="S4" gate="G$1" x="152.4" y="12.7" smashed="yes" rot="R270" grouprefs="SENSOR">
-<attribute name="VALUE" x="148.336" y="7.62" size="1.778" layer="96" rot="R270" align="top-center"/>
-<attribute name="NAME" x="156.464" y="12.7" size="1.778" layer="95" rot="R270" align="bottom-center"/>
+<instance part="S4" gate="G$1" x="152.4" y="10.16" smashed="yes" rot="R270" grouprefs="SENSOR">
+<attribute name="VALUE" x="148.336" y="5.08" size="1.778" layer="96" rot="R270" align="top-center"/>
+<attribute name="NAME" x="156.464" y="10.16" size="1.778" layer="95" rot="R270" align="bottom-center"/>
 </instance>
-<instance part="S5" gate="G$1" x="172.72" y="12.7" smashed="yes" rot="R270" grouprefs="SENSOR">
-<attribute name="VALUE" x="168.656" y="7.62" size="1.778" layer="96" rot="R270" align="top-center"/>
-<attribute name="NAME" x="176.784" y="12.7" size="1.778" layer="95" rot="R270" align="bottom-center"/>
+<instance part="S5" gate="G$1" x="172.72" y="10.16" smashed="yes" rot="R270" grouprefs="SENSOR">
+<attribute name="VALUE" x="168.656" y="5.08" size="1.778" layer="96" rot="R270" align="top-center"/>
+<attribute name="NAME" x="176.784" y="10.16" size="1.778" layer="95" rot="R270" align="bottom-center"/>
 </instance>
-<instance part="S6" gate="G$1" x="193.04" y="12.7" smashed="yes" rot="R270" grouprefs="SENSOR">
-<attribute name="VALUE" x="188.976" y="7.62" size="1.778" layer="96" rot="R270" align="top-center"/>
-<attribute name="NAME" x="197.104" y="12.7" size="1.778" layer="95" rot="R270" align="bottom-center"/>
+<instance part="S6" gate="G$1" x="193.04" y="10.16" smashed="yes" rot="R270" grouprefs="SENSOR">
+<attribute name="VALUE" x="188.976" y="5.08" size="1.778" layer="96" rot="R270" align="top-center"/>
+<attribute name="NAME" x="197.104" y="10.16" size="1.778" layer="95" rot="R270" align="bottom-center"/>
 </instance>
 <instance part="-|+" gate="G$1" x="88.9" y="66.04" smashed="yes" rot="R180" grouprefs="POWER">
 <attribute name="VALUE" x="86.106" y="66.04" size="1.778" layer="96" rot="R270" align="top-center"/>
@@ -19660,119 +19660,119 @@ Source: www.kingbright.com</description>
 <instance part="GND8" gate="1" x="139.7" y="50.8" smashed="yes" grouprefs="POWER">
 <attribute name="VALUE" x="137.16" y="48.26" size="1.778" layer="96"/>
 </instance>
-<instance part="GND9" gate="1" x="91.44" y="5.08" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="88.9" y="2.54" size="1.778" layer="96"/>
+<instance part="GND9" gate="1" x="91.44" y="2.54" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="88.9" y="0" size="1.778" layer="96"/>
 </instance>
-<instance part="GND10" gate="1" x="111.76" y="5.08" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="109.22" y="2.54" size="1.778" layer="96"/>
+<instance part="GND10" gate="1" x="111.76" y="2.54" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="109.22" y="0" size="1.778" layer="96"/>
 </instance>
-<instance part="GND11" gate="1" x="132.08" y="5.08" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="129.54" y="2.54" size="1.778" layer="96"/>
+<instance part="GND11" gate="1" x="132.08" y="2.54" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="129.54" y="0" size="1.778" layer="96"/>
 </instance>
-<instance part="GND12" gate="1" x="152.4" y="5.08" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="149.86" y="2.54" size="1.778" layer="96"/>
+<instance part="GND12" gate="1" x="152.4" y="2.54" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="149.86" y="0" size="1.778" layer="96"/>
 </instance>
-<instance part="GND13" gate="1" x="172.72" y="5.08" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="170.18" y="2.54" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="172.72" y="2.54" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="170.18" y="0" size="1.778" layer="96"/>
 </instance>
-<instance part="GND14" gate="1" x="193.04" y="5.08" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="190.5" y="2.54" size="1.778" layer="96"/>
+<instance part="GND14" gate="1" x="193.04" y="2.54" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="190.5" y="0" size="1.778" layer="96"/>
 </instance>
-<instance part="+3V4" gate="G$1" x="88.9" y="30.48" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="86.36" y="25.4" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V4" gate="G$1" x="88.9" y="27.94" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="86.36" y="22.86" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V5" gate="G$1" x="109.22" y="30.48" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="106.68" y="25.4" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V5" gate="G$1" x="109.22" y="27.94" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="106.68" y="22.86" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V6" gate="G$1" x="129.54" y="30.48" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="127" y="25.4" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V6" gate="G$1" x="129.54" y="27.94" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="127" y="22.86" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V7" gate="G$1" x="149.86" y="30.48" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="147.32" y="25.4" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V7" gate="G$1" x="149.86" y="27.94" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="147.32" y="22.86" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V8" gate="G$1" x="170.18" y="30.48" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="167.64" y="25.4" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V8" gate="G$1" x="170.18" y="27.94" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="167.64" y="22.86" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V9" gate="G$1" x="190.5" y="30.48" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="187.96" y="25.4" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V9" gate="G$1" x="190.5" y="27.94" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="187.96" y="22.86" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R2" gate="G$1" x="93.98" y="27.94" smashed="yes" rot="R90" grouprefs="SENSOR">
-<attribute name="NAME" x="92.4814" y="24.13" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="97.282" y="24.13" size="1.778" layer="96" rot="R90"/>
+<instance part="R2" gate="G$1" x="93.98" y="25.4" smashed="yes" rot="R90" grouprefs="SENSOR">
+<attribute name="NAME" x="92.4814" y="21.59" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="97.282" y="21.59" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R3" gate="G$1" x="114.3" y="27.94" smashed="yes" rot="R90" grouprefs="SENSOR">
-<attribute name="NAME" x="112.8014" y="24.13" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="117.602" y="24.13" size="1.778" layer="96" rot="R90"/>
+<instance part="R3" gate="G$1" x="114.3" y="25.4" smashed="yes" rot="R90" grouprefs="SENSOR">
+<attribute name="NAME" x="112.8014" y="21.59" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="117.602" y="21.59" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R4" gate="G$1" x="134.62" y="27.94" smashed="yes" rot="R90" grouprefs="SENSOR">
-<attribute name="NAME" x="133.1214" y="24.13" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="137.922" y="24.13" size="1.778" layer="96" rot="R90"/>
+<instance part="R4" gate="G$1" x="134.62" y="25.4" smashed="yes" rot="R90" grouprefs="SENSOR">
+<attribute name="NAME" x="133.1214" y="21.59" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="137.922" y="21.59" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R5" gate="G$1" x="154.94" y="27.94" smashed="yes" rot="R90" grouprefs="SENSOR">
-<attribute name="NAME" x="153.4414" y="24.13" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="158.242" y="24.13" size="1.778" layer="96" rot="R90"/>
+<instance part="R5" gate="G$1" x="154.94" y="25.4" smashed="yes" rot="R90" grouprefs="SENSOR">
+<attribute name="NAME" x="153.4414" y="21.59" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="158.242" y="21.59" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R6" gate="G$1" x="175.26" y="27.94" smashed="yes" rot="R90" grouprefs="SENSOR">
-<attribute name="NAME" x="173.7614" y="24.13" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="178.562" y="24.13" size="1.778" layer="96" rot="R90"/>
+<instance part="R6" gate="G$1" x="175.26" y="25.4" smashed="yes" rot="R90" grouprefs="SENSOR">
+<attribute name="NAME" x="173.7614" y="21.59" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="178.562" y="21.59" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R7" gate="G$1" x="195.58" y="27.94" smashed="yes" rot="R90" grouprefs="SENSOR">
-<attribute name="NAME" x="194.0814" y="24.13" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="198.882" y="24.13" size="1.778" layer="96" rot="R90"/>
+<instance part="R7" gate="G$1" x="195.58" y="25.4" smashed="yes" rot="R90" grouprefs="SENSOR">
+<attribute name="NAME" x="194.0814" y="21.59" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="198.882" y="21.59" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V10" gate="G$1" x="93.98" y="35.56" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="91.44" y="30.48" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V10" gate="G$1" x="93.98" y="33.02" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="91.44" y="27.94" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V11" gate="G$1" x="114.3" y="35.56" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="111.76" y="30.48" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V11" gate="G$1" x="114.3" y="33.02" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="111.76" y="27.94" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V12" gate="G$1" x="134.62" y="35.56" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="132.08" y="30.48" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V12" gate="G$1" x="134.62" y="33.02" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="132.08" y="27.94" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V13" gate="G$1" x="154.94" y="35.56" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="152.4" y="30.48" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V13" gate="G$1" x="154.94" y="33.02" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="152.4" y="27.94" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V14" gate="G$1" x="175.26" y="35.56" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="172.72" y="30.48" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V14" gate="G$1" x="175.26" y="33.02" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="172.72" y="27.94" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V15" gate="G$1" x="195.58" y="35.56" smashed="yes" grouprefs="SENSOR">
-<attribute name="VALUE" x="193.04" y="30.48" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V15" gate="G$1" x="195.58" y="33.02" smashed="yes" grouprefs="SENSOR">
+<attribute name="VALUE" x="193.04" y="27.94" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R8" gate="G$1" x="88.9" y="22.86" smashed="yes" rot="R90" grouprefs="SENSOR">
-<attribute name="NAME" x="87.4014" y="19.05" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="92.202" y="19.05" size="1.778" layer="96" rot="R90"/>
+<instance part="R8" gate="G$1" x="88.9" y="20.32" smashed="yes" rot="R90" grouprefs="SENSOR">
+<attribute name="NAME" x="87.4014" y="16.51" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="92.202" y="16.51" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R9" gate="G$1" x="109.22" y="22.86" smashed="yes" rot="R90" grouprefs="SENSOR">
-<attribute name="NAME" x="107.7214" y="19.05" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="112.522" y="19.05" size="1.778" layer="96" rot="R90"/>
+<instance part="R9" gate="G$1" x="109.22" y="20.32" smashed="yes" rot="R90" grouprefs="SENSOR">
+<attribute name="NAME" x="107.7214" y="16.51" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="112.522" y="16.51" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R10" gate="G$1" x="129.54" y="22.86" smashed="yes" rot="R90" grouprefs="SENSOR">
-<attribute name="NAME" x="128.0414" y="19.05" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="132.842" y="19.05" size="1.778" layer="96" rot="R90"/>
+<instance part="R10" gate="G$1" x="129.54" y="20.32" smashed="yes" rot="R90" grouprefs="SENSOR">
+<attribute name="NAME" x="128.0414" y="16.51" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="132.842" y="16.51" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R11" gate="G$1" x="149.86" y="22.86" smashed="yes" rot="R90" grouprefs="SENSOR">
-<attribute name="NAME" x="148.3614" y="19.05" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="153.162" y="19.05" size="1.778" layer="96" rot="R90"/>
+<instance part="R11" gate="G$1" x="149.86" y="20.32" smashed="yes" rot="R90" grouprefs="SENSOR">
+<attribute name="NAME" x="148.3614" y="16.51" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="153.162" y="16.51" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R12" gate="G$1" x="170.18" y="22.86" smashed="yes" rot="R90" grouprefs="SENSOR">
-<attribute name="NAME" x="168.6814" y="19.05" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="173.482" y="19.05" size="1.778" layer="96" rot="R90"/>
+<instance part="R12" gate="G$1" x="170.18" y="20.32" smashed="yes" rot="R90" grouprefs="SENSOR">
+<attribute name="NAME" x="168.6814" y="16.51" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="173.482" y="16.51" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R13" gate="G$1" x="190.5" y="22.86" smashed="yes" rot="R90" grouprefs="SENSOR">
-<attribute name="NAME" x="189.0014" y="19.05" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="193.802" y="19.05" size="1.778" layer="96" rot="R90"/>
+<instance part="R13" gate="G$1" x="190.5" y="20.32" smashed="yes" rot="R90" grouprefs="SENSOR">
+<attribute name="NAME" x="189.0014" y="16.51" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="193.802" y="16.51" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R14" gate="G$1" x="154.94" y="88.9" smashed="yes" grouprefs="BOOT">
-<attribute name="NAME" x="151.13" y="90.3986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="151.13" y="85.598" size="1.778" layer="96"/>
+<instance part="R14" gate="G$1" x="154.94" y="91.44" smashed="yes" grouprefs="BOOT">
+<attribute name="NAME" x="151.13" y="92.9386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="151.13" y="88.138" size="1.778" layer="96"/>
 </instance>
-<instance part="LED1" gate="G$1" x="162.56" y="88.9" smashed="yes" rot="R90" grouprefs="BOOT">
-<attribute name="NAME" x="167.132" y="92.456" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="167.132" y="94.615" size="1.778" layer="96" rot="R180"/>
+<instance part="LED1" gate="G$1" x="162.56" y="91.44" smashed="yes" rot="R90" grouprefs="BOOT">
+<attribute name="NAME" x="167.132" y="94.996" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="167.132" y="97.155" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R1" gate="G$1" x="93.98" y="91.44" smashed="yes">
-<attribute name="NAME" x="90.17" y="92.9386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="90.17" y="88.138" size="1.778" layer="96"/>
+<instance part="R1" gate="G$1" x="93.98" y="93.98" smashed="yes" grouprefs="RESET">
+<attribute name="NAME" x="90.17" y="95.4786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="90.17" y="90.678" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -19786,16 +19786,16 @@ Source: www.kingbright.com</description>
 </segment>
 <segment>
 <pinref part="RESETESP" gate="G$1" pin="3"/>
-<wire x1="119.38" y1="91.44" x2="127" y2="91.44" width="0.1524" layer="91" grouprefs="RESET"/>
+<wire x1="119.38" y1="93.98" x2="127" y2="93.98" width="0.1524" layer="91" grouprefs="RESET"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="BOTESP" gate="G$1" pin="3"/>
-<wire x1="162.56" y1="101.6" x2="165.1" y2="101.6" width="0.1524" layer="91" grouprefs="BOOT"/>
+<wire x1="162.56" y1="104.14" x2="165.1" y2="104.14" width="0.1524" layer="91" grouprefs="BOOT"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="167.64" y1="88.9" x2="170.18" y2="88.9" width="0.1524" layer="91" grouprefs="BOOT"/>
+<wire x1="167.64" y1="91.44" x2="170.18" y2="91.44" width="0.1524" layer="91" grouprefs="BOOT"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
 </segment>
@@ -19819,33 +19819,33 @@ Source: www.kingbright.com</description>
 </segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="17.78" x2="91.44" y2="7.62" width="0.1524" layer="91" grouprefs="SENSOR"/>
+<wire x1="91.44" y1="15.24" x2="91.44" y2="5.08" width="0.1524" layer="91" grouprefs="SENSOR"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="S2" gate="G$1" pin="2"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="111.76" y1="7.62" x2="111.76" y2="17.78" width="0.1524" layer="91" grouprefs="SENSOR"/>
+<wire x1="111.76" y1="5.08" x2="111.76" y2="15.24" width="0.1524" layer="91" grouprefs="SENSOR"/>
 </segment>
 <segment>
 <pinref part="S3" gate="G$1" pin="2"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="132.08" y1="7.62" x2="132.08" y2="17.78" width="0.1524" layer="91" grouprefs="SENSOR"/>
+<wire x1="132.08" y1="5.08" x2="132.08" y2="15.24" width="0.1524" layer="91" grouprefs="SENSOR"/>
 </segment>
 <segment>
 <pinref part="S4" gate="G$1" pin="2"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="152.4" y1="7.62" x2="152.4" y2="17.78" width="0.1524" layer="91" grouprefs="SENSOR"/>
+<wire x1="152.4" y1="5.08" x2="152.4" y2="15.24" width="0.1524" layer="91" grouprefs="SENSOR"/>
 </segment>
 <segment>
 <pinref part="S5" gate="G$1" pin="2"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="172.72" y1="7.62" x2="172.72" y2="17.78" width="0.1524" layer="91" grouprefs="SENSOR"/>
+<wire x1="172.72" y1="5.08" x2="172.72" y2="15.24" width="0.1524" layer="91" grouprefs="SENSOR"/>
 </segment>
 <segment>
 <pinref part="S6" gate="G$1" pin="2"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="193.04" y1="7.62" x2="193.04" y2="17.78" width="0.1524" layer="91" grouprefs="SENSOR"/>
+<wire x1="193.04" y1="5.08" x2="193.04" y2="15.24" width="0.1524" layer="91" grouprefs="SENSOR"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -19855,7 +19855,7 @@ Source: www.kingbright.com</description>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<wire x1="88.9" y1="91.44" x2="86.36" y2="91.44" width="0.1524" layer="91" grouprefs="RESET"/>
+<wire x1="88.9" y1="93.98" x2="86.36" y2="93.98" width="0.1524" layer="91" grouprefs="RESET"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
@@ -19924,9 +19924,9 @@ Source: www.kingbright.com</description>
 <label x="12.7" y="68.58" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="99.06" y1="88.9" x2="106.68" y2="88.9" width="0.1524" layer="91" grouprefs="RESET"/>
+<wire x1="99.06" y1="91.44" x2="106.68" y2="91.44" width="0.1524" layer="91" grouprefs="RESET"/>
 <pinref part="RESETESP" gate="G$1" pin="2"/>
-<label x="99.06" y="88.9" size="0.8128" layer="95" rot="R180" xref="yes" grouprefs="RESET"/>
+<label x="99.06" y="91.44" size="0.8128" layer="95" rot="R180" xref="yes" grouprefs="RESET"/>
 </segment>
 </net>
 <net name="LED" class="0">
@@ -19936,8 +19936,8 @@ Source: www.kingbright.com</description>
 <label x="33.02" y="25.4" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<wire x1="149.86" y1="88.9" x2="147.32" y2="88.9" width="0.1524" layer="91" grouprefs="BOOT"/>
-<label x="147.32" y="88.9" size="0.8128" layer="95" rot="R180" xref="yes" grouprefs="BOOT"/>
+<wire x1="149.86" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91" grouprefs="BOOT"/>
+<label x="147.32" y="91.44" size="0.8128" layer="95" rot="R180" xref="yes" grouprefs="BOOT"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -19949,14 +19949,14 @@ Source: www.kingbright.com</description>
 </segment>
 <segment>
 <pinref part="BOTESP" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="101.6" x2="147.32" y2="101.6" width="0.1524" layer="91" grouprefs="BOOT"/>
-<label x="147.32" y="101.6" size="0.8128" layer="95" rot="R180" xref="yes" grouprefs="BOOT"/>
+<wire x1="149.86" y1="104.14" x2="147.32" y2="104.14" width="0.1524" layer="91" grouprefs="BOOT"/>
+<label x="147.32" y="104.14" size="0.8128" layer="95" rot="R180" xref="yes" grouprefs="BOOT"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="RESETESP" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="91.44" x2="99.06" y2="91.44" width="0.1524" layer="91" grouprefs="RESET"/>
+<wire x1="106.68" y1="93.98" x2="99.06" y2="93.98" width="0.1524" layer="91" grouprefs="RESET"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -19977,8 +19977,8 @@ Source: www.kingbright.com</description>
 <net name="SENSOR1" class="0">
 <segment>
 <pinref part="S1" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="17.78" x2="93.98" y2="22.86" width="0.1524" layer="91" grouprefs="SENSOR"/>
-<label x="93.98" y="20.32" size="0.8128" layer="95" xref="yes" grouprefs="SENSOR"/>
+<wire x1="93.98" y1="15.24" x2="93.98" y2="20.32" width="0.1524" layer="91" grouprefs="SENSOR"/>
+<label x="93.98" y="17.78" size="0.8128" layer="95" xref="yes" grouprefs="SENSOR"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -19990,8 +19990,8 @@ Source: www.kingbright.com</description>
 <net name="SENSOR2" class="0">
 <segment>
 <pinref part="S2" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="17.78" x2="114.3" y2="22.86" width="0.1524" layer="91" grouprefs="SENSOR"/>
-<label x="114.3" y="20.32" size="0.8128" layer="95" xref="yes" grouprefs="SENSOR"/>
+<wire x1="114.3" y1="15.24" x2="114.3" y2="20.32" width="0.1524" layer="91" grouprefs="SENSOR"/>
+<label x="114.3" y="17.78" size="0.8128" layer="95" xref="yes" grouprefs="SENSOR"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -20003,8 +20003,8 @@ Source: www.kingbright.com</description>
 <net name="SENSOR3" class="0">
 <segment>
 <pinref part="S3" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="17.78" x2="134.62" y2="22.86" width="0.1524" layer="91" grouprefs="SENSOR"/>
-<label x="134.62" y="20.32" size="0.8128" layer="95" xref="yes" grouprefs="SENSOR"/>
+<wire x1="134.62" y1="15.24" x2="134.62" y2="20.32" width="0.1524" layer="91" grouprefs="SENSOR"/>
+<label x="134.62" y="17.78" size="0.8128" layer="95" xref="yes" grouprefs="SENSOR"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -20016,8 +20016,8 @@ Source: www.kingbright.com</description>
 <net name="SENSOR4" class="0">
 <segment>
 <pinref part="S4" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="17.78" x2="154.94" y2="22.86" width="0.1524" layer="91" grouprefs="SENSOR"/>
-<label x="154.94" y="20.32" size="0.8128" layer="95" xref="yes" grouprefs="SENSOR"/>
+<wire x1="154.94" y1="15.24" x2="154.94" y2="20.32" width="0.1524" layer="91" grouprefs="SENSOR"/>
+<label x="154.94" y="17.78" size="0.8128" layer="95" xref="yes" grouprefs="SENSOR"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -20029,8 +20029,8 @@ Source: www.kingbright.com</description>
 <net name="SENSOR5" class="0">
 <segment>
 <pinref part="S5" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="17.78" x2="175.26" y2="22.86" width="0.1524" layer="91" grouprefs="SENSOR"/>
-<label x="175.26" y="20.32" size="0.8128" layer="95" xref="yes" grouprefs="SENSOR"/>
+<wire x1="175.26" y1="15.24" x2="175.26" y2="20.32" width="0.1524" layer="91" grouprefs="SENSOR"/>
+<label x="175.26" y="17.78" size="0.8128" layer="95" xref="yes" grouprefs="SENSOR"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -20042,8 +20042,8 @@ Source: www.kingbright.com</description>
 <net name="SENSOR6" class="0">
 <segment>
 <pinref part="S6" gate="G$1" pin="1"/>
-<wire x1="195.58" y1="17.78" x2="195.58" y2="22.86" width="0.1524" layer="91" grouprefs="SENSOR"/>
-<label x="195.58" y="20.32" size="0.8128" layer="95" xref="yes" grouprefs="SENSOR"/>
+<wire x1="195.58" y1="15.24" x2="195.58" y2="20.32" width="0.1524" layer="91" grouprefs="SENSOR"/>
+<label x="195.58" y="17.78" size="0.8128" layer="95" xref="yes" grouprefs="SENSOR"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -20098,6 +20098,8 @@ Source: www.kingbright.com</description>
 </sheet>
 </sheets>
 <errors>
+<approved hash="202,1,17.78,66.04,U1,SENSOR_VP,,,,"/>
+<approved hash="202,1,17.78,63.5,U1,SENSOR_VN,,,,"/>
 <approved hash="113,1,163.83,89.2217,LED1,,,,,"/>
 </errors>
 </schematic>
