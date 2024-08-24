@@ -20,7 +20,10 @@ public:
   inline void SetMarkUP() {_up = !_up;}
   inline void SetMarkDown() {_down = !_down;}
 
+public:
+  unsigned int Read();
 
+  // function: flag(). eIf read() > _refLevel, then send flag and mark as _rise. (on rise or on fall)
 private:
   /*
     Channel properties:
@@ -32,6 +35,7 @@ private:
   int _channelIndex;
   int _pin;
   int _refLevel;
+  bool _rise, _fall; // 
   bool _up, _down; // Timestamp mark checkboxes
 
 };

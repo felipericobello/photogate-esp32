@@ -15,9 +15,6 @@ Photogate::Photogate(const unsigned int* gate) : _gate(gate), _gateSize(s_gateSi
 
 Photogate::~Photogate()
 {
-  delete _gate;
-  delete _TimeStamps;
-  delete _Channel;
 }
 
 
@@ -44,6 +41,7 @@ void Photogate::OnUpdate()
   {
     for(int index = 0; index<s_gateSize; index++)
     {
+      // t_Read[index] = _Channel[index]->Read();
       t_Read[index] = analogRead(_gate[index]);
     }
 

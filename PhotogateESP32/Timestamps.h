@@ -6,7 +6,7 @@
 class TimeStamps
 {
 public: 
-  TimeStamps();
+  TimeStamps() : _time(0) {}
 
 public: 
   // Check necessity for esp_timer.h later.
